@@ -1,0 +1,20 @@
+{
+  "name": "the-acting-computer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export --with-clicks"
+  },
+  "dependencies": {
+    "@fontsource/instrument-serif": "^5.2.0",
+    "@fontsource/inter": "^5.2.0",
+    "@fontsource/jetbrains-mono": "^5.2.0",
+    "@iconify-json/carbon": "^1.2.5",
+    "@slidev/cli": "0.50.0",
+    "gsap": "^3.15.0",
+    "vue": "^3.5.13"
+  }
+}
