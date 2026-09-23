@@ -17,21 +17,9 @@ meta: Thomas Drießen
 footer: 'Der schauspielernde Computer: Was Künstliche Intelligenz heute wirklich ist und kann'
 ---
 
-<!--
-Inhalts-Grundlage: manuskript.md (40-Min-Redemanuskript). Diese Datei enthält den
-Markdown-Foliendeck-Inhalt im Simple-Editorial-Theme (Ordner theme/ in diesem Repo).
-Speaker-Notes (Slidev-Kommentare am Folienende) verweisen auf die passende Stelle im Manuskript,
-statt den Sprechtext zu duplizieren.
--->
-
 # **Der schauspielernde Computer**
 
 <lead>Was Künstliche Intelligenz <accent>heute</accent> wirklich ist und kann</lead>
-
-
-<!--
-Begrüßung. "Guten Abend, schön dass Sie alle da sind."
--->
 
 ---
 layout: s-speaker
@@ -52,12 +40,7 @@ layout: s-statement
 footer: 'Der schauspielernde Computer: Was Künstliche Intelligenz heute wirklich ist und kann'
 ---
 
-# Wer von Ihnen hat schon einmal selbst mit <accent>ChatGPT</accent> gesprochen?
-
-<!--
-Show of hands, Hände zählen, kurz kommentieren. Dann Überleitung: "Was steckt eigentlich hinter
-diesem ganzen 'KI'-Wort..." Ziel des Abends: informierte, entspannte Neugier.
--->
+# Wer von Euch hat in der letzten Woche mit <accent>KI</accent> interagiert?
 
 ---
 layout: s-section
@@ -82,10 +65,6 @@ footer: 01 · Was ist KI eigentlich?
 
 </v-clicks>
 
-<!--
-Drei ganz unterschiedliche Fähigkeiten, keine davon "chattet". Trotzdem alles KI.
--->
-
 ---
 layout: s-statement
 footer: 01 · Was ist KI eigentlich?
@@ -96,7 +75,7 @@ footer: 01 · Was ist KI eigentlich?
 <v-click>
 Es ist die erste KI, mit der wir alle <accent>direkt, in normaler Sprache</accent>, reden können.
 
-<lead> <term>Large Language Models (LLMs)</term> — das Thema für heute Abend</lead>
+<lead> Large Language Models (LLMs) — das Thema für heute Abend</lead>
 </v-click>
 ---
 layout: s-section
@@ -104,7 +83,7 @@ num: '02'
 footer: 02 · Wie funktionieren LLMs?
 ---
 
-# Wie funktionieren LLMs eigentlich?
+# Wie funktionieren LLMs?
 
 ---
 layout: s-default
@@ -117,15 +96,17 @@ Wie die Vorschlags-Tastatur auf Ihrem Handy —
 
 "Ich hole gleich noch <quiet>___</quiet>"
 
+<v-clicks>
+
+1. "<accent>Brot</accent>" 
+2. "<accent>Milch</accent>"
+3. "<accent>Toilettenpapier</accent>"
+
+</v-clicks>
+
 <v-click>
-
-→ "<accent>Brot</accent>" oder "<accent>Milch</accent>"
-
+Ein mini LM trainiert auf den Nachrichten die Ihr geschrieben habt.
 </v-click>
-
-<!--
-Nur eben mit gewaltigem Unterschied im Maßstab.
--->
 
 ---
 layout: s-image
@@ -136,24 +117,9 @@ side: right
 footer: 02 · Wie funktionieren LLMs?
 ---
 
-# Trainingsdaten ≈ <accent>das gesamte digitale Wissen der Menschheit</accent>
+# Trainingsdaten für ein LLM = <accent>das gesamte digitale Wissen der Menschheit</accent>
 
 Bücher, Zeitungsartikel, Wikipedia, Foren, Webseiten — mehrfach durchgelesen.
-
----
-layout: s-statement
-footer: 02 · Wie funktionieren LLMs?
----
-
-# "Der Himmel ist ___"
-
-<v-clicks>
-
-<lead><accent>"blau"</accent></lead>
-
-Nicht weil das Modell weiß, *was* der Himmel ist — sondern weil "blau" statistisch am häufigsten folgt.
-</v-clicks>
-
 
 ---
 layout: s-default
@@ -166,7 +132,7 @@ footer: 02 · Wie funktionieren LLMs?
 
 - **Grammatik & Stil** — wie ein flüssiger Satz klingt
 - **Fakten & Wissen** — Paris ist die Hauptstadt von Frankreich
-- **Argumentations- & Lösungsmuster** — wie Menschen Probleme Schritt für Schritt lösen
+- **Argumentations- & Lösungsmuster** — wie Menschen Texte strukturell aufbauen und Probleme Schritt für Schritt lösen
 
 </v-clicks>
 
@@ -191,37 +157,56 @@ footer: 03 · Intelligenz vs. Statistik
 
 <quiet>Kennt Fachbegriffe, Tonfall, Zitate — versteht die Physik aber nicht wirklich.</quiet>
 
-<!--
-Genau das ist ein Sprachmodell: gelernt, wie kluge Antworten klingen — nicht, was sie bedeuten.
--->
+---
+layout: s-statement
+footer: 03 · Intelligenz vs. Statistik
+---
+
+# "Der Himmel ist ___"
+
+<v-clicks>
+
+<lead><accent>"blau"</accent></lead>
+
+Nicht weil das Modell weiß, *was* der Himmel ist — sondern weil "blau" statistisch gesehen das passendste Wort an dieser Stelle ist.
+</v-clicks>
 
 ---
 layout: s-split
 footer: 03 · Intelligenz vs. Statistik
 ---
 
-# <num>9,11</num> oder <num>9,9</num> — was ist größer?
-
 <v-click>
 Manche Modelle antworten: <accent>9,11</accent>
+</v-click>
 
-Weil sie in Trainingsdaten Versionsnummern gesehen haben ("Kapitel 9.11 kommt nach 9.9")
+<v-click>
+Weil sie in Trainingsdaten Kapitelnummern gesehen haben ("Kapitel 9.11 kommt nach 9.9")
 und dieses Muster falsch übertragen.
 </v-click>
+
 ::right::
 
 <v-click>
 <lead>Ein Drittklässler mit echtem Zahlenverständnis<br>macht diesen Fehler nicht.</lead>
 </v-click>
+
+::header::
+# <num>9,11</num> oder <num>9,9</num> — was ist größer?
+
 ---
 layout: s-statement
 footer: 03 · Intelligenz vs. Statistik
 ---
+# Sind LLMs intelligent?
 
-# Muster erkennen <accent>≠</accent> verstehen
+<v-click>
+Kurze Antwort: Nein!
+Muster erkennen <accent>≠</accent> verstehen
 
 Kein inneres Weltmodell, keine Ziele, kein Bewusstsein — eine rein statistische
 Mustererkennungsmaschine.
+</v-click>
 
 ---
 layout: s-section
